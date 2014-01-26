@@ -8,7 +8,7 @@ module Squid
       @client.connect_timeout = 1
       @client.receive_timeout = 1
 
-      @url = 'http://localhost:9292/api'
+      @url = Squid.endpoint
       @header = { 'Content-Type' => 'application/json' }
     end
 
