@@ -1,4 +1,4 @@
-module CI
+module Squid
 
   VERSION = '0.0.1'
 

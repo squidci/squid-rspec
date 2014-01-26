@@ -5,7 +5,7 @@ require_relative 'reporter'
 require_relative 'example'
 require_relative 'build'
 
-module CI
+module Squid
   class Formatter < RSpec::Core::Formatters::BaseFormatter
 
     def initialize(output)
@@ -15,7 +15,7 @@ module CI
       @started_at = DateTime.now
       @skip_reporting = false
 
-      @build_id = ENV['CI_BUILD_ID']
+      @build_id = ENV[Squid.build_id_variable]
       missing_build_id! unless @build_id
 
       report '/test-suite-started', started_at: @started_at
@@ -65,12 +65,12 @@ module CI
 
     def unable_to_connect!
       skip_reporting!
-      warn 'Unable to connect to CI server!'
+      warn 'Squid-Rspec is unable to connect to the Squid API!'
     end
 
     def missing_build_id!
       skip_reporting!
-      warn 'Missing CI_BUILD_ID environment variable!'
+      warn "Squid-RSpec is missing #{Squid.build_id_variable.inspect} environment variable!"
     end
 
     def skip_reporting!

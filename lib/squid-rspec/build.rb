@@ -1,4 +1,4 @@
-module CI
+module Squid
   class Build
 
     def self.complete(data)

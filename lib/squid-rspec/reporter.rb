@@ -1,6 +1,6 @@
 require_relative 'errors'
 
-module CI
+module Squid
   class Reporter
 
     def initialize

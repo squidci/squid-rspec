@@ -1,15 +1,15 @@
 lib = File.expand_path("../lib", __FILE__)
 $:.unshift lib unless $:.include? lib
 
-require 'ci-rspec/version'
+require 'squid-rspec/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'ci-rspec'
-  s.version     = CI::VERSION
+  s.name        = 'squid-rspec'
+  s.version     = Squid::VERSION
   s.authors     = 'Daniel Harrington'
   s.email       = 'me@rubiii.com'
   s.homepage    = 'http://savonrb.com'
-  s.summary     = 'Reports test results to CI'
+  s.summary     = 'Reports RSpec test results to Squid'
   s.description = s.summary
 
   s.rubyforge_project = s.name

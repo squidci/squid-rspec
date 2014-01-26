@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ci-rspec (0.0.1)
+    squid-rspec (0.0.1)
       httpclient
       rspec
 
@@ -24,5 +24,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ci-rspec!
   rake
+  squid-rspec!

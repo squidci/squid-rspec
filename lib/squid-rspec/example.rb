@@ -1,4 +1,4 @@
-module CI
+module Squid
   class Example
 
     def self.convert(example)
