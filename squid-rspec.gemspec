@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version     = Squid::VERSION
   s.authors     = 'Daniel Harrington'
   s.email       = 'me@rubiii.com'
-  s.homepage    = 'http://savonrb.com'
-  s.summary     = 'Reports RSpec test results to Squid'
+  s.homepage    = 'https://github.com/squidci/squid-rspec'
+  s.summary     = 'Reports RSpec test results to Squid.'
   s.description = s.summary
 
   s.rubyforge_project = s.name
