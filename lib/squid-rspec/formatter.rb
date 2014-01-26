@@ -65,12 +65,16 @@ module Squid
 
     def unable_to_connect!
       skip_reporting!
-      warn 'Squid-Rspec is unable to connect to the Squid API!'
+      warn "WARNING: Squid-RSpec is skipping to report test results for the current build!\n" \
+           "  Unable to connect to the Squid API.\n" \
+           "  Please check the Squid server at #{Squid.endpoint.inspect}"
     end
 
     def missing_build_id!
       skip_reporting!
-      warn "Squid-RSpec is missing #{Squid.build_id_variable.inspect} environment variable!"
+      warn "WARNING: Squid-RSpec is skipping to report test results for the current build!\n" \
+           "  Missing the build-id environment variable.\n" \
+           "  Please ensure #{Squid.endpoint.inspect} is set to the current build-id."
     end
 
     def skip_reporting!
