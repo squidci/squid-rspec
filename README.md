@@ -9,6 +9,6 @@ This allows Squid to display detailed test results as soon as they arrive.
 [![Coverage Status](https://coveralls.io/repos/squidci/squid-rspec/badge.png)](https://coveralls.io/r/squidci/squid-rspec)
 
 
-## Usage
+## Status
 
-...
+Be warned, that this is not meant to be used just yet!
