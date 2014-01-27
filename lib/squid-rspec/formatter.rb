@@ -74,7 +74,7 @@ module Squid
       skip_reporting!
       warn "WARNING: Squid-RSpec is skipping to report test results for the current build!\n" \
            "  Missing the build-id environment variable.\n" \
-           "  Please ensure #{Squid.endpoint.inspect} is set to the current build-id."
+           "  Please ensure #{Squid.build_id_variable.inspect} is set to the current build-id."
     end
 
     def skip_reporting!
