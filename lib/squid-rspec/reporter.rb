@@ -1,3 +1,4 @@
+require 'httpclient'
 require_relative 'errors'
 
 module Squid
