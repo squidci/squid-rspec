@@ -1,5 +1,5 @@
 module Squid
-  class Build
+  class TestSuite
 
     def self.complete(data)
       new(data).complete
